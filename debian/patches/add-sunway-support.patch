@@ -1,0 +1,32 @@
+Description: add sunway support
+Author: Miao Changwei <miaochangwei@uniontech.com>
+
+---
+Last-Update: 2022-05-23
+
+--- golang-github-creack-pty-1.1.15.orig/test_crosscompile.sh
++++ golang-github-creack-pty-1.1.15/test_crosscompile.sh
+@@ -25,7 +25,7 @@ cross() {
+ 
+ set -e
+ 
+-cross linux     amd64 386 arm arm64 ppc64 ppc64le s390x mips mipsle mips64 mips64le
++cross linux     amd64 386 arm arm64 ppc64 ppc64le s390x mips mipsle mips64 mips64le sw64
+ cross darwin    amd64 arm64
+ cross freebsd   amd64 386 arm arm64
+ cross netbsd    amd64 386 arm arm64
+--- /dev/null
++++ golang-github-creack-pty-1.1.15/ztypes_sw64.go
+@@ -0,0 +1,12 @@
++//go:build sw64
++//+build sw64
++
++// Created by cgo -godefs - DO NOT EDIT
++// cgo -godefs types.go
++
++package pty
++
++type (
++	_C_int  int32
++	_C_uint uint32
++)

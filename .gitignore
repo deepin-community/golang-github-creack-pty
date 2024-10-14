@@ -1,1 +1,4 @@
-.pc/
+[568].out
+_go*
+_test*
+_obj

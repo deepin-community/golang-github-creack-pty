@@ -1,14 +1,28 @@
-golang-github-creack-pty (1.1.15.1-1+deepin) UNRELEASED; urgency=medium
+golang-github-creack-pty (1.1.21-1) unstable; urgency=medium
 
-  * update
+  * Team upload.
+  * New upstream version 1.1.21
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Bump Standards-Version to 4.6.2 (no change)
 
- -- Debian Go Packaging Team <team+pkg-go@tracker.debian.org>  Thu, 28 Jul 2022 10:48:33 +0800
+ -- Anthony Fok <foka@debian.org>  Wed, 27 Dec 2023 13:31:45 -0700
 
-golang-github-creack-pty (1.1.15.1-1+deepin) unstable; urgency=medium
+golang-github-creack-pty (1.1.18-1) unstable; urgency=medium
 
-  * Add sunway support.
+  * Team upload.
+  * New upstream version 1.1.18
+  * Bump Standards-Version to 4.6.1 (no change)
 
- -- Miao Changwei <miaochangwei@uniontech.com>  Mon, 23 May 2022 16:33:34 +0800
+ -- Anthony Fok <foka@debian.org>  Sun, 05 Jun 2022 07:31:34 -0600
+
+golang-github-creack-pty (1.1.17-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.1.17
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Remove unused Files-Excluded field in debian/copyright
+
+ -- Anthony Fok <foka@debian.org>  Wed, 29 Dec 2021 18:06:09 -0700
 
 golang-github-creack-pty (1.1.15-1) unstable; urgency=medium
 
